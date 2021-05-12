@@ -1,0 +1,19 @@
+{
+    "extends": "tdued",
+    "rules": {
+        "space-before-function-paren": [
+            "error",
+            {
+                "anonymous": "never",
+                "named": "never",
+                "asyncArrow": "always"
+            }
+        ],
+        "quotes": [
+            "error",
+            "single",
+            "avoid-escape"
+        ],
+        "indent": "off"
+    }
+}

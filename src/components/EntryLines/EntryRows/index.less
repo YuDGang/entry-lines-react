@@ -1,0 +1,57 @@
+.ant-row-style-cover {
+    &:not(:last-of-type) {
+        border-bottom: 1px dashed #bfbfbf;
+        margin-bottom: 10px;
+        // padding-bottom: 10px;
+    }
+
+    .ant-col {
+        text-align: center;
+        line-height: 32px;
+
+        >:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    .ant-input,
+    .ant-input-number,
+    .ant-select {
+        width: 100%;
+    }
+
+    .invisible {
+        display: block;
+        visibility: hidden;
+    }
+}
+
+.in-line-buttons {
+    height: 32px;
+    font-size: 16px;
+    color: #8c8c8c;
+    text-align: end;
+
+    i {
+        vertical-align: middle;
+
+        &:not(:last-child) {
+            margin: auto 4px;
+        }
+    }
+}
+
+.com-entry-rows {
+    // .ant-row{
+    //     display: flex;
+    //     align-items: center;
+    //     text-align: center;
+    //     justify-content: center;
+
+    //     .ant-row-style-cover();
+    // }
+
+    .ant-row-flex {
+        .ant-row-style-cover();
+    }
+}
