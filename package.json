@@ -1,14 +1,14 @@
 {
   "name": "@tntx/entry-lines",
-  "version": "1.0.0",
-  "description": "以数据驱动的、可以在一行内渲染多个(Antd3)Input、Select、字符、甚至自定义dom，并渲染多个上述行的组件。",
+  "version": "1.0.2",
+  "description": "以数据驱动的、可以在一行内渲染多个(Antd3)Input、Select、字符、甚至自定义dom，并渲染多个上述行的组件。提供联动、交互功能",
   "main": "lib/index.js",
   "scripts": {
     "start": "SYS_ENV=development webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
     "build": "SYS_ENV=production webpack --progress --config build/webpack.prod.conf.js",
     "dll": "webpack --config ./build/webpack.dll.conf.js",
     "lint": "eslint --ext .js,.vue src",
-    "build2": "npx babel src/components/Ellipsis --out-dir lib --copy-files",
+    "build-module": "npx babel src/components/EntryLines --out-dir lib --copy-files",
     "publish": "sh publish.sh"
   },
   "files": [
@@ -16,8 +16,13 @@
   ],
   "keywords": [
     "ant3",
+    "tntx",
     "data driven",
+    "entryLines",
+    "entryRows",
+    "entry Lines",
     "entry lines",
+    "entry Rows",
     "entry rows",
     "entry"
   ],
@@ -81,6 +86,8 @@
     "react-router-dom": "^5.1.2"
   },
   "dependencies": {
-    "lodash": "^4.17.21"
+    "lodash": "^4.17.21",
+    "antd": ">= 3.26.0",
+    "react": ">= 16.11.0"
   }
 }

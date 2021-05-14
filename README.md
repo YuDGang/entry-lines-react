@@ -1,11 +1,11 @@
 # EntryLines 多行数据录入
 
-以数据驱动的、可以在一行内渲染多个(Antd3)Input、Select、字符、甚至自定义dom，并渲染多个上述行的组件
+以数据驱动的、可以在一行内渲染多个(Antd3)Input、Select、字符、甚至自定义dom，并渲染多个上述行的组件。提供联动、交互功能
         
 ## 安装、发布与源码
 安装：`npm i @tntx/entry-lines`  
 发布：https://www.npmjs.com/package/@tntx/entry-lines  
-源码：https://github.com/YuDGang/entry-lines-react/tree/master/src/components/entry-lines
+源码：https://github.com/YuDGang/entry-lines-react/tree/master/src/components/EntryLines
 
 ## 更新日志
 - 1.0.0 数据驱动的EntryLines发布;  
@@ -25,8 +25,8 @@
 |type|输入控件的类型，可选`'input'`、`'inputNumber'`、`'select'`|string|
 |dataIndex|输入控件数据在数据项中对应的 key|string|
 |visible|可见性|boolean &#124; Function(source, record))|
-|render|自定义渲染Node|ReactNode|
-|operateRender|操作类型的自定义渲染Node，参数中附带了对数据的操作回调|ReactNode(record, operateCallback)|
+|render|渲染自定义Node|ReactNode|
+|operateRender|渲染操作类型的自定义Node，参数中附带了对数据的操作回调|ReactNode(record, operateCallback)|
 |colSpan|栅格占位格数, 共24格|number|
 |options|Select.Option控件的选项数组，当`type`为`select`时，此为必填项|array[{title: , value: }]|
     
@@ -36,11 +36,11 @@
 ## 如何使用  
 由数据驱动，data改变，则组件重新渲染。
         
-## 代码演示
+<!-- ## 代码演示
 ``` javascript
 import { useState } from 'react';
 import { Modal, Icon } from 'antd';
-import EntryRows from '@/components/EntryRows';
+import EntryLines from '@tntx/entry-lines';
 import './index.less';
 
 export default () => {
@@ -139,4 +139,4 @@ export default () => {
 	</div >;
 };
 
-```
+``` -->
